@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperación</title>
+</head>
+<body>
+    <div>
+        <h1>Velocidad de Corredores en una Carrera de 1.500 metros</h1>
+        <div>
+            <label for="minutos">Minutos:</label>
+            <input type="number" id="minutos" step="0.1">
+        </div>
+        <div>
+            <label for="segundos">Segundos:</label>
+            <input type="number" id="segundos" step="0.1">
+        </div>
+        <button onclick="agregarCorredor()">Agregar Corredor</button>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Minutos</th>
+                    <th>Segundos</th>
+                    <th>Velocidad (m/s)</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpoTablaCorredores">
+            </tbody>
+        </table>
+    </div>
+    <a href="index.html">Index</a>
+    <script src="2.6.js"></script>
+</body>
+</html>

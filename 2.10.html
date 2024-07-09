@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperación</title>
+</head>
+<body>
+    <div>
+        <h1>Calculadora de Salario Neto</h1>
+        <div>
+            <label for="horasTrabajadas">Horas Trabajadas:</label>
+            <input type="number" id="horasTrabajadas" step="0.1">
+        </div>
+        <div>
+            <label for="salarioHora">Salario por Hora:</label>
+            <input type="number" id="salarioHora" step="0.1">
+        </div>
+        <div>
+            <label for="tasaImpuestos">Tasa de Impuestos (%):</label>
+            <input type="number" id="tasaImpuestos" step="0.1">
+        </div>
+        <button onclick="calcularSalario()">Calcular Salario</button>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Horas Trabajadas</th>
+                    <th>Salario por Hora</th>
+                    <th>Tasa de Impuestos (%)</th>
+                    <th>Salario Neto</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpoTablaSalarios">
+            </tbody>
+        </table>
+    </div>
+    <a href="index.html">Index</a>
+    <script src="2.10.js"></script>
+</body>
+</html>
